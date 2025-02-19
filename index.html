@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLE GOLF</title>
+    <style>
+        /* Reset and Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #f3efef;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* Navbar */
+         .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+         /* Hero Section */
+         .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('https://fthmb.tqn.com/Dedb5me01-zZ4xrHoxTDQKSXEys=/5200x3481/filters:fill(auto,1)/golf-swing-driver-586568b25f9b586e0208884a.jpg') no-repeat center center/cover;
+            color: #070404;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons .cta-btn {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+
+        /* Quick Links Section */
+        .quick-links {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .quick-links h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .link-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .link-card {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .link-card:hover {
+            background-color: #555;
+        }
+
+        /* Events Section */
+        .events-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        .events-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .event-card {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .event-card h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .event-btn {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        /* About Us Section */
+        .about-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+         /* Packages and Facilities Section */
+         .packages-facilities-section {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .packages-facilities-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .package,
+        .facility {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 400px;
+            background-color: #fff;
+        }
+
+        .package h3,
+        .facility h3 {
+            color: #007BFF;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+         /* Contact Section */
+         .contact-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .contact-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+         /* Booking Section */
+         .booking-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+
+        .booking-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .booking-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Hole Golf Club</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#booking.html">Booking</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>WELCOME TO HOLE GOLF</h1>
+            <p>Every Round is Unforgettable</p>
+            <div class="cta-buttons">
+                <a href="booking.html" class="cta-btn">Book a Tee Time</a>
+                <a href="events.html" class="cta-btn">Explore Events</a>
+                <a href="contact.html" class="cta-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <h2>Explore Our Club</h2>
+        <div class="link-cards">
+            <a href="#booking" class="link-card">Book a Tee Time</a>
+            <a href="#events" class="link-card">Events</a>
+            <a href="#packages" class="link-card">Packages</a>
+        </div>
+    </section>
+
+    <!-- Featured Events -->
+    <section id="events" class="events-section">
+        <h2>Featured Events</h2>
+        <div class="event-card">
+            <h3>Annual Golf Tournament</h3>
+            <p>Date: December 10, 2024</p>
+            <p>Join us for our annual golf tournament with amazing prizes.</p>
+            <a href="#booking" class="event-btn">Learn More</a>
+        </div>
+        <div class="event-card">
+            <h3>New Year's Golf Bash</h3>
+            <p>Date: January 1, 2025</p>
+            <p>Celebrate the New Year with a round of golf and festivities.</p>
+            <a href="#booking" class="event-btn">Learn More</a>
+        </div>
+    </section>
+
+     <!-- Packages and Facilities Section -->
+     <section id="packages-facilities" class="packages-facilities-section">
+        <h2>Packages and Facilities</h2>
+
+        <div class="packages">
+            <h3>Packages</h3>
+            <div class="package">
+                <h4>Basic Package</h4>
+                <p>Enjoy a day of golf with access to our 18-hole course. Includes a golf cart and a complimentary drink.</p>
+                <p><strong>Price:</strong> $50</p>
+            </div>
+            <div class="package">
+                <h4>Family Package</h4>
+                <p>A perfect outing for families. Includes 4 rounds of golf, access to the driving range, and a meal for four.</p>
+                <p><strong>Price:</strong> $150</p>
+            </div>
+            <div class="package">
+                <h4>VIP Package</h4>
+                <p>Experience the best with our VIP package. Includes exclusive access to our members-only lounge, personal caddy, and a gourmet dinner.</p>
+                <p><strong>Price:</strong> $300</p>
+            </div>
+        </div>
+
+        <div class="facilities">
+            <h3>Facilities</h3>
+            <div class="facility">
+                <h4>Clubhouse</h4>
+                <p>Relax and unwind in our luxurious clubhouse with stunning views of the course.</p>
+            </div>
+            <div class="facility">
+                <h4>Pro Shop</h4>
+                <p>Find everything you need, from clubs to apparel, at our well-stocked pro shop.</p>
+            </div>
+            <div class="facility">
+                <h4>Driving Range</h4>
+                <p>Practice your swing at our state-of-the-art driving range, complete with expert coaching.</p>
+            </div>
+            <div class="facility">
+                <h4>Restaurant</h4>
+                <p>Enjoy delicious meals and drinks, perfect for a post-game celebration or a relaxing day.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Feel free to reach out to us for any questions or to learn more about Hole Golf Club.</p>
+        
+        <div class="contact-info">
+            <p><strong>Address:</strong> 123 Golf Lane, Green Valley, CA 90210</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> contact@holegolfclub.com</p>
+        </div>
+
+        <div class="contact-form">
+            <form action="/submit-contact" method="POST">
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <!-- Subject -->
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+     <!-- Booking Section -->
+     <section class="booking-section">
+        <h1>Book a Tee Time</h1>
+        <p>Reserve your spot to enjoy a round of golf at Hole Golf Club. Please fill out the form below to complete your booking.</p>
+        <div class="booking-form">
+            <form action="/submit-booking" method="POST">
+                <!-- Date -->
+                <div class="form-group">
+                    <label for="date">Select Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <!-- Time -->
+                <div class="form-group">
+                    <label for="time">Select Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <!-- Number of Players -->
+                <div class="form-group">
+                    <label for="players">Number of Players</label>
+                    <select id="players" name="players" required>
+                        <option value="1">1 Player</option>
+                        <option value="2">2 Players</option>
+                        <option value="3">3 Players</option>
+                        <option value="4">4 Players</option>
+                    </select>
+                </div>
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                </div>
+                <!-- Special Requests -->
+                <div class="form-group">
+                    <label for="requests">Special Requests</label>
+                    <textarea id="requests" name="requests" rows="4" placeholder="Any additional requests or requirements"></textarea>
+                </div>
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+</style>
+</head>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Hole Golf Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery | Hole Golf Club</h1>
+    </header>
+    
+    <section class="container">
+        <div class="gallery-item">
+            <img src="https://www.dronestagr.am/wp-content/uploads/2017/06/DJI_0239-3-scaled.jpg" alt="Beautiful view of Hole 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.travelandleisure.com/thmb/t6YClx98SzUa-VW2vAsUG2Cfn88=/1800x1200/filters:fill(auto,1)/biltmore-golf-course-miami_HERO_FLGOLF0822-5cccab45e1f8407ab8209d8ddd35f9a8.jpg" alt="Clubhouse exterior">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.sportstravelmagazine.com/wp-content/uploads/2021/06/AP21143845719403-scaled.jpg" alt="Golf tournament in progress">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.columbuszoo.org/sites/default/files/assets/banners/GOLF.jpg" alt="Golf course at sunset">
+        </div>
+    </section>
+</body>
+</html>
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Hole Golf Club</h2>
+        <p>Hole Golf Club is a premier destination for golf enthusiasts, offering stunning views, challenging holes, and an unmatched experience for all skill levels. Join us to experience golf at its finest.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Hole Golf Club. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
