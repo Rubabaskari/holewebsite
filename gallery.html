@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Hole Golf Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery | Hole Golf Club</h1>
+    </header>
+    
+    <section class="container">
+        <div class="gallery-item">
+            <img src="https://www.dronestagr.am/wp-content/uploads/2017/06/DJI_0239-3-scaled.jpg" alt="Beautiful view of Hole 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.travelandleisure.com/thmb/t6YClx98SzUa-VW2vAsUG2Cfn88=/1800x1200/filters:fill(auto,1)/biltmore-golf-course-miami_HERO_FLGOLF0822-5cccab45e1f8407ab8209d8ddd35f9a8.jpg" alt="Clubhouse exterior">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.sportstravelmagazine.com/wp-content/uploads/2021/06/AP21143845719403-scaled.jpg" alt="Golf tournament in progress">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.columbuszoo.org/sites/default/files/assets/banners/GOLF.jpg" alt="Golf course at sunset">
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Hole Golf Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
